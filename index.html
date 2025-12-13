@@ -220,6 +220,7 @@
 
     <div class="container">
       <div class="row">
+        
         <div class="col-md-6">
           <div class="well">
             <a href="https://www.intel.com/content/www/us/en/homepage.html"><img src="https://images.seeklogo.com/logo-png/38/2/intel-new-2020-logo-png_seeklogo-386226.png" alt="intel.com" height="150px" class="pull-left" style="padding-right: 15px; padding-bottom: 10px; padding-top:20px;"></a>
@@ -240,45 +241,56 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+
             <h3>Send Me a Message</h3>
-            <div class="spacer"></div>
-            <form class="form-horizontal" role="form" id="form" method="post">
-              <div class="form-group">
-                <label for="name" class="col-sm-2 control-label">Name</label>
-                <div class="col-sm-10">
-                  <input type="text" class="contact form-control" name="name" id="name" placeholder="Name">
+              <div class="spacer"></div>
+              <form action="https://formspree.io/f/mvgelwwb" method="POST" class="form-horizontal" role="form" id="form">
+                <!-- Name -->
+                <div class="form-group row">
+                  <label for="name" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label for="email" class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-10">
-                  <input type="email" class="contact form-control" name="email" id="email" placeholder="Email">
+                
+                <!-- Email -->
+                <div class="form-group row">
+                  <label for="email" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label for="subject" class="col-sm-2 control-label">Subject</label>
-                <div class="col-sm-10">
-                  <input type="text" class="contact form-control" name="subject" id="subject" placeholder="Subject">
+                
+                <!-- Subject -->
+                <div class="form-group row">
+                  <label for="subject" class="col-sm-2 col-form-label">Subject</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label for="message" class="col-sm-2 control-label">Message</label>
-                <div class="col-sm-10">
-                  <textarea class="contact form-control" rows="3" name="message" id="message" placeholder="Message"></textarea>
+
+                <!-- Message -->
+                <div class="form-group row">
+                  <label for="message" class="col-sm-2 col-form-label">Message</label>
+                  <div class="col-sm-10">
+                    <textarea class="form-control" rows="3" name="message" id="message" placeholder="Message" required></textarea>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <input type="submit" value="Send" class="btn btn-default" name="submit">
+                
+                <!-- Submit -->
+                <div class="form-group row">
+                  <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </div>
                 </div>
-              </div>
-            </form>
+              </form>
           </div><!--/.col-->
+          
           <div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
             <h3>Contact Details</h3><div class="spacer"></div>
-            <p class="lead" style="margin-bottom:0px;"><i class="fa fa-map-marker"></i>&nbsp; 6519 N. Fairfield Avenue</p><p class="lead" style="text-indent:24px">Chicago, IL, 60645</p>
-            <p class="lead"><i class="fa fa-phone"></i>&nbsp; 312 576-9620</p>
-            <p class="lead"><i class="fa fa-envelope"></i>&nbsp; contact@timothy.expert</p>
+            <p class="lead" style="margin-bottom:0px;"><i class="fa fa-map-marker"></i>&nbsp; Vidyanagar Cross, Bettahalasur Post </p><p class="lead" style="text-indent:24px">Bengaluru, IN, 562157</p>
+            <p class="lead"><i class="fa fa-phone"></i>&nbsp; +91 8073995356</p>
+            <p class="lead"><i class="fa fa-envelope"></i>&nbsp; lokeshramu8441@gmail.com</p>
           </div>
         </div><!--/.row-->
       </div><!--/.container-->
